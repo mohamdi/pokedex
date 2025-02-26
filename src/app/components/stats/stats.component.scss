@@ -1,0 +1,15 @@
+.stat-container {
+  display: grid;
+  grid-template-columns: 1fr 0fr 1fr;
+
+  span {
+    margin-right: 1rem;
+    font-family: 'Roboto';
+  }
+}
+
+app-stat-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

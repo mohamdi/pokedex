@@ -1,0 +1,100 @@
+{
+  "global": {
+    "cancel": "Cancel",
+    "validate": "Confirm",
+    "logout": "Logout",
+    "delete": "Delete",
+    "select_placeholder": "Select ...",
+    "field_required": "This field is required",
+    "add": "Add",
+    "edit": "Edit",
+    "view": "View",
+    "export": "Export",
+    "close": "Close",
+    "generate": "Generate",
+    "actions": "Actions",
+    "password_mismatch": "Passwords do not match",
+    "password_pattern_error": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one symbol!",
+    "username_already_used": "This username is not available!",
+    "email_already_used": "This email is not available!",
+    "showPassword": "Show Password",
+    "search": "Search ...",
+    "apply": "Apply",
+    "page": "Page",
+    "of": "of"
+  },
+  "lang": {
+    "ar": "العربية",
+    "en": "English",
+    "fr": "Français"
+  },
+  "nav": {
+    "home": "Home",
+    "directories": "Directories",
+    "organization-chart": "Organization Chart",
+    "categories": "Categories",
+    "users": "Users",
+    "archives": "Archives",
+    "shared": "Shared"
+  },
+  "footer": {
+    "title": "ITCANTEK, All rights reserved © {{year}}",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "contact": "Contact Us"
+  },
+  "user": {
+    "title": "Users",
+    "table-header": {
+      "id": "ID",
+      "username": "Username",
+      "role": "Role",
+      "office": "Office",
+      "userActive": "Active?",
+      "fullName": "Full Name",
+      "email": "Email"
+    },
+    "form-fields": {
+      "fullName": "Full Name",
+      "role": "Role",
+      "email": "Email",
+      "office": "Office",
+      "username": "Username",
+      "password": "Password",
+      "passwordConf": "Password Confirmation"
+    },
+    "modal_delete": {
+      "title": "Delete this user",
+      "message": "This user will be permanently deleted, are you sure you want to delete it?"
+    },
+    "form": {
+      "add_success_message": "The user has been created",
+      "add_error_message": "Error",
+      "update_success_message": "The user has been updated",
+      "update_error_message": "Error",
+      "delete_success_message": "The user has been deleted",
+      "delete_error_message": "Error"
+    }
+  },
+  "login": {
+    "username": "Username",
+    "password": "Password",
+    "login": "Login"
+  },
+  "profile": {
+    "update_password": "Update Password",
+    "password_updated": "Password updated",
+    "password_error": "Error",
+    "form-fields": {
+      "currentPassword": "Current Password",
+      "password": "Password",
+      "passwordConf": "Password Confirmation"
+    }
+  },
+  "enum": {
+    "role": {
+      "ADMIN": "Administrator",
+      "DIRECTOR": "Director"
+    }
+  }
+}

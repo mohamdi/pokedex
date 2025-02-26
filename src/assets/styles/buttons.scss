@@ -1,0 +1,29 @@
+.btn {
+  border: none !important;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-primary {
+  background-color: #FE5858 !important;
+  color: #FFFFFF !important;
+
+  &:hover {
+    background-color: #45A049;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+}

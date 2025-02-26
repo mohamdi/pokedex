@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="pokemon-card">
+        <img [src]="imageUrl" [alt]="chain?.species?.name"/>
+        <span>{{ chain?.species?.name | titlecase }}</span>
+    </div>
+    <ng-container *ngIf="chain?.evolves_to[0]">
+        <div class="arrow-container">
+            <svg width="98" height="12" viewBox="0 0 98 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 6H95.0388" [attr.stroke]="color" stroke-width="4" stroke-linecap="round"/>
+                <path d="M91.5 2.28744L95.0388 6" [attr.stroke]="color" stroke-width="4" stroke-linecap="round"/>
+                <path d="M91.5 9.28744L95.0388 6" [attr.stroke]="color" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <app-pokemon-card [color]="color" [chain]="chain?.evolves_to[0]"></app-pokemon-card>
+    </ng-container>
+</div>

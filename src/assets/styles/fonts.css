@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Single Day';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Single Day'), url('../fonts/SingleDay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+}

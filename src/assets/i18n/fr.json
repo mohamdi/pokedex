@@ -1,0 +1,21 @@
+{
+  "search-form": {
+    "search-label": "Pokemon Name or Id",
+    "action-buttons": {
+      "search": "Search",
+      "random": "Random"
+    }
+  },
+  "not-found": {
+    "text": "No Pokemon Found!"
+  },
+  "tabs": {
+    "stats": "STATS",
+    "evolutions": "EVOLUTIONS",
+    "moves": "MOVES"
+  },
+  "under-construction": {
+    "title": "Pokédex is Under Construction!",
+    "description": "This feature is under construction. Stay tuned!"
+  }
+}

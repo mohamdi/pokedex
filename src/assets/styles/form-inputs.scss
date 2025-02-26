@@ -1,0 +1,27 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  label {
+    margin-bottom: 8px;
+    color: #111416;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    width: 100%;
+
+    label {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 15px;
+      padding: 0 12px;
+    }
+  }
+}

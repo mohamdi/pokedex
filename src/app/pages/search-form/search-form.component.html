@@ -1,0 +1,13 @@
+<div class="main-container">
+    <div class="form-container">
+        <img class="pokemon-ball-img" src="../../../assets/images/pokemon-ball.png" alt="Pokemon ball" />
+        <div class="form-group">
+            <label for="search">{{'search-form.search-label' | translate}}</label>
+            <input id="search" type="text" [(ngModel)]="searchInput" class="form-control" />
+        </div>
+        <div class="action-buttons">
+            <button (click)="search()" type="submit" class="btn btn-primary">{{'search-form.action-buttons.search' | translate}}</button>
+            <button (click)="randomSearch()" type="button" class="btn btn-primary">{{'search-form.action-buttons.random' | translate}}</button>
+        </div>
+    </div>
+</div>

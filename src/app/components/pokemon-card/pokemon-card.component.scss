@@ -1,0 +1,30 @@
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+
+  img {
+    width: 100px;
+  }
+
+  span {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45.88px;
+    letter-spacing: -0.08px;
+    text-align: center;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.arrow-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

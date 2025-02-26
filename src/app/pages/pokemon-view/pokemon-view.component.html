@@ -1,0 +1,71 @@
+<ng-container *ngIf="!notFound">
+    <div class="main-container" [style.background-color]="getTypeColor(this.pokemonData?.types[0].name)">
+        <app-navigation-bar></app-navigation-bar>
+        <div class="pokemon-container">
+            <div class="general-informations">
+                <img alt="Pokemon picture" src="{{pokemonData?.sprites?.other?.['official-artwork']?.front_default}}"/>
+                <span class="pokemon-name">{{ pokemonData?.name | titlecase }}</span>
+                <div class="pokemon-types">
+                        <span class="pokemon-type" *ngFor="let type of pokemonData?.types"
+                              [style.background-color]="getTypeColor(type?.name)">{{ type?.name | uppercase }}</span>
+                </div>
+                <span class="pokemon-description">
+                    {{ pokemonData?.description }}
+                </span>
+            </div>
+            <div class="nav-container">
+                <ul ngbNav #nav="ngbNav" class="nav-tabs" [(activeId)]="activeTab">
+                    <li ngbNavItem [ngbNavItem]="1">
+                        <button ngbNavLink
+                                [ngStyle]="{
+                                    'background-color': activeTab === 1 ? getTypeColor(this.pokemonData?.types[0].name) : 'transparent',
+                                    'color': activeTab === 1 ? '#FFF': getTypeColor(this.pokemonData?.types[0].name)
+                                }"
+                        >
+                            {{ 'tabs.stats' | translate }}
+                        </button>
+                        <ng-template ngbNavContent>
+                            <div class="tab-container">
+                                <app-stats [color]="getTypeColor(this.pokemonData?.types[0].name)"
+                                           [stats]="pokemonData?.stats"></app-stats>
+                            </div>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem [ngbNavItem]="2">
+                        <button ngbNavLink
+                                [ngStyle]="{
+                                    'background-color': activeTab === 2 ? getTypeColor(this.pokemonData?.types[0].name) : 'transparent',
+                                    'color': activeTab === 2 ? '#FFF': getTypeColor(this.pokemonData?.types[0].name)
+                                }"
+                        >
+                            {{ 'tabs.evolutions' | translate }}
+                        </button>
+                        <ng-template ngbNavContent>
+                            <div class="tab-container">
+                                <app-evolution-chain [color]="getTypeColor(this.pokemonData?.types[0].name)" [pokemonData]="pokemonData"></app-evolution-chain>
+                            </div>
+                        </ng-template>
+                    </li>
+                    <li ngbNavItem [ngbNavItem]="3">
+                        <button ngbNavLink
+                                [ngStyle]="{
+                                    'background-color': activeTab === 3 ? getTypeColor(this.pokemonData?.types[0].name) : 'transparent',
+                                    'color': activeTab === 3 ? '#FFF': getTypeColor(this.pokemonData?.types[0].name)
+                                }"
+                        >{{ 'tabs.moves' | translate }}
+                        </button>
+                        <ng-template ngbNavContent>
+                            <div class="tab-container">
+                                <app-under-construction></app-under-construction>
+                            </div>
+                        </ng-template>
+                    </li>
+                </ul>
+            </div>
+            <div [ngbNavOutlet]="nav"></div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="notFound">
+    <app-no-result></app-no-result>
+</ng-container>

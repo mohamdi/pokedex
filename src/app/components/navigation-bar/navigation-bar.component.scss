@@ -1,0 +1,32 @@
+.top-bar {
+  top: 70px;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  justify-content: space-between;
+
+  i {
+    margin-left: 170px;
+    color: #FAFAFA;
+    font-size: 75px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .title {
+    font-family: 'Single Day';
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 93.75px;
+    color: #FFFFFF;
+    width: 70%;
+  }
+}
+
+::ng-deep{
+  .tab-pane {
+    display: flex !important;
+  }
+}

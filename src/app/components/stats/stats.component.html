@@ -1,0 +1,5 @@
+<div class="stat-container" *ngFor="let stat of stats">
+    <span [style.color]="color" class="stat-name">{{ stat?.stat?.name | uppercase }}</span>
+    <span class="stat-value">{{ stat?.base_stat }}</span>
+    <app-stat-bar [value]="stat?.base_stat" [progressColor]="color"></app-stat-bar>
+</div>
